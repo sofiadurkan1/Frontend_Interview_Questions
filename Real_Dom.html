@@ -1,29 +1,25 @@
 //DOM
 *DOM stands for “ Document Object Model ”.
 *With the Document Object Model, programmers can build documents, navigate their structure, and add, modify, or delete elements and content.
-
+* Elements of HTML become nodes in the DOM.
+*while HTML is a text, the DOM is an in-memory representation of this text.
+*The HTML DOM provides an interface (API) to traverse and modify the nodes. It contains methods like getElementById or removeChild
 *Manipulating the DOM is slow.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //VIRTUAL DOM
 *Instead of updating the DOM when your application state changes, you simply create a virtual tree or Virtual Tree, which looks like the DOM state that you want
 *Virtual DOM will then figure out how to make the DOM look like this efficiently without recreating all of the DOM nodes.
-
+*Manipulating the virtual DOM as editing a blueprint, as opposed to moving rooms in an actual house.
 *Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. 
 *JSX makes components/blocks code readable
 *Virtual DOM is ideal for mobile first applications
+*Once React knows which virtual DOM objects have changed, then React updates those objects, and only those objects, on the real DOM. In our example from earlier, React would be smart enough to rebuild your one checked-off list-item, and leave the rest of your list alone.
+*React can update only the necessary parts of the DOM. React’s reputation for performance comes largely from this innovation.
+
+
+
+
+
+
 
