@@ -1,0 +1,11 @@
+
+
+What is High order component?
+
+* a higher-order component is a function that takes a component and returns a new component.
+const EnhancedComponent = higherOrderComponent(WrappedComponent);
+
+Higher order components are JavaScript functions used for adding additional functionalities to the existing component.
+ These functions are pure, which means they are receiving data and returning values according to that data. 
+ If the data changes, higher order functions are re-run with different data input.
+If we want to update our returning component, we don't have to change the HOC. All we need to do is change the data that our function is using.

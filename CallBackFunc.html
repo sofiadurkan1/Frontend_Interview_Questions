@@ -1,0 +1,28 @@
+
+
+//What is Callback function?
+
+//A callback is a function passed as an argument to another function
+//A callback function can run after another function has finished
+
+function isOddNumber(number) {
+    return number % 2;
+}
+
+const oddNumbers = numbers.filter(isOddNumber);
+console.log(oddNumbers); // [ 1, 7, 3, 5 ]
+
+//In this example, the isOddNumber is a callback function. When you pass a callback function into another function, 
+you just pass the reference of the function i.e., the function name without the parentheses ().
+
+
+//IMPORTANT:
+
+In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions.
+ Functions that do this are called higher-order functions. Any function that is passed as an argument is called a callback function.
+
+
+Why do we need Callbacks?
+For one very important reason — JavaScript is an event driven language. 
+This means that instead of waiting for a response before moving on, JavaScript will keep executing while listening for other events.
+
