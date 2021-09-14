@@ -1,0 +1,26 @@
+
+* You can use Context in your application directly and is going to be great for passing down data to deeply nested components which what it was designed for. 
+Whereas Redux is much more powerful and provides a large number of features that the Context Api doesn't provide.
+
+In a usual React application, the common way of sharing data between two components is via prop drilling, 
+ passing the data as props from parent component to child component.
+
+
+*The pop drilling method is suitable for a small application with two or three nested child components. 
+However, for complicated applications, the data must be passed down as props to each of the levels until it reaches the desired component. This requires additional code. 
+As the prop is updated in a child component, it must be passed to all the components that require it. Because of this, components that don’t need the data need to be 'aware' of it.
+****************************************************************
+
+*Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+The Redux approach
+
+*Actions
+*Reducers
+*Store
+
+=>Actions are the only source of information for the Store. Actions carry the information that sends data from the application to the Store
+=>Reducers are responsible for how the application changes in response to an action made by an end-user.
+=>The Store knits every thing together to make the application work
+
+=>To access the state and dispatch within Redux, use useSelector() and useDispatch() hooks,
