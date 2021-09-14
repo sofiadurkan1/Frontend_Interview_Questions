@@ -1,0 +1,71 @@
+
+
+Each one will iterate over an array and perform a transformation or computation. 
+Each will return a new array based on the result of the function.
+
+
+
+//MAP 
+*** Basically is takes 2 arguments,a callback and an optional context
+** The callback runs for each value in the array and returns each new value in the resulting array. 
+
+// What you have
+var officers = [
+  { id: 20, name: 'Captain Piett' },
+  { id: 24, name: 'General Veers' },
+  { id: 56, name: 'Admiral Ozzel' },
+  { id: 88, name: 'Commander Jerjerrod' }
+];
+// What you need
+[20, 24, 56, 88]
+
+var officersIds = officers.map(function (officer) {
+    return officer.id
+  });
+
+
+
+  //REDUCE 
+
+  .reduce() is an easy way to generate a single value
+
+  Just like .map(), .reduce() also runs a callback for each element of an array. 
+  What’s different here is that reduce passes the result of this callback (the accumulator) from one array element to the other.
+
+  var pilots = [
+  {
+    id: 10,
+    name: "Poe Dameron",
+    years: 14,
+  },
+  {
+    id: 2,
+    name: "Temmin 'Snap' Wexley",
+    years: 30,
+  },
+  {
+    id: 41,
+    name: "Tallissan Lintra",
+    years: 16,
+  },
+  {
+    id: 99,
+    name: "Ello Asty",
+    years: 22,
+  }
+];
+
+const totalYears = pilots.reduce((acc, pilot) => acc + pilot.years, 0);
+
+
+//FILTER   
+
+What if you have an array, but only want some of the elements in it..
+
+The filter() method takes each element in an array and it applies a conditional statement against it. 
+If this conditional returns true, the element gets pushed to the output array. If the condition returns false, 
+the element does not get pushed to the output array.
+
+const numbers = [1, 2, 3, 4];
+const evens = numbers.filter(item => item % 2 === 0);
+console.log(evens); // [2, 4]
